@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda Jurnal Absensi</title>
+    <!-- Menggunakan style1.css khusus untuk beranda -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Dashboard Kiri -->
+        <aside class="sidebar">
+            <h3>Dashboard</h3>
+            <ul>
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <!-- Pindah ke file baru yang sudah kamu buat di komputer -->
+                <li><a href="absen-masuk.html">Absen Masuk</a></li>
+            </ul>
+        </aside>
+
+        <!-- Konten Utama: Hanya menampilkan daftar jurnal -->
+        <main class="main-content">
+            <header>
+                <h2>Beranda Jurnal Absensi</h2>
+            </header>
+
+            <!-- Menampilkan baris riwayat data absensi memanjang ke samping -->
+            <section class="data-section">
+                <h3>Daftar Riwayat Jurnal Beranda</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Tanggal</th>
+                            <th>Bulan</th>
+                            <th>Tahun</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelBeranda">
+                        <!-- Baris data jurnal akan muncul di sini dari localStorage -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <!-- Menghubungkan ke berkas JS beranda yang sudah kamu buat di folder system -->
+    <script src="../system/beranda.js"></script>
+</body>
+</html>
